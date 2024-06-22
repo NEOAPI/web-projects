@@ -1,0 +1,482 @@
+
+/* CSS Styles */
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+/*Heading animation  */
+.captivating-heading h2 {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .captivating-heading p {
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  .captivating-heading button {
+    animation: fade-in 4s ease-in-out;
+  }
+  
+.captivating-heading h2,
+.captivating-heading p,
+.captivating-heading button {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Brans SVB Animation  */
+.brand-container {
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .logo-container img{
+    width: 90px;
+    padding: 5;
+    border-radius: 5px;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .contact-info a{
+    margin-right: 1rem; /* Space between menu items */
+    text-decoration: none;
+    color:  #faf9f9; /* Text color */
+    font-weight: bold; /* Make links stand out */
+  }
+  
+  nav {
+    display: flex; /* Inline display on desktop */
+  }
+  
+  nav a {
+    margin-right: 1rem; /* Space between menu items */
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-weight: bold; /* Make links stand out */
+  }
+  
+  /* Responsive styles for smaller screens (mobile) */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack elements vertically on mobile */
+    }
+  
+    nav {
+      display: none; /* Hide menu initially AND when not active */
+    }
+  }
+  
+    .menu-toggle {
+      display: block; /* Show toggle button on mobile */
+      margin-top: 1rem; /* Space between toggle and content */
+    }
+  
+    nav a {
+      margin-right: 0; /* Remove margin between items on mobile */
+      padding: 1rem; /* Add padding for better touch targets */
+      border-bottom: 1px solid #ddd; /* Subtle border between items */
+    }
+  
+  
+  /* Styling for the menu toggle button (icon can be customized) */
+  .menu-toggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer; /* Indicate interactive element */
+  }
+  
+  .menu-toggle-icon {
+    /* Customize your hamburger icon here */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #333; /* Icon color */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Toggle menu visibility and icon rotation on click */
+  .menu-toggle:hover .menu-toggle-icon,
+  .menu-toggle.active .menu-toggle-icon {
+    transform: rotate(90deg); /* Rotate icon on hover/active */
+  }
+  
+  /* Add a new rule to handle menu visibility */
+  .menu-toggle.active + nav {
+    display: block; /* Show menu when toggle is active */
+  }
+  header {
+    display: flex; /* Arrange elements horizontally */
+    align-items: center; /* Align vertically */
+    justify-content: space-between; /* Distribute space evenly */
+    padding: 1rem 2rem; /* Add some padding */
+    background-color: #f5f5f5; /* Light background color */
+  }
+
+.nav-container {
+    align-items: Right;
+    }
+
+
+nav {
+display: flex;
+align-items: center;
+}
+
+nav a {
+text-decoration: none;
+color: #000;
+padding: 0 10px;
+margin: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+nav a:hover {
+color: #f8f8f8;
+background-color: #000;
+}
+
+
+#book-now-button {
+
+background-color: #000;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+#book-now-button:hover {
+background-color: #f8f8f8;
+color: #000;
+}
+
+
+/* booknow  */
+
+.captivating-heading {
+    background-image: url("hero-image.gif");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+text-align: center;
+}
+
+.captivating-heading h2 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.captivating-heading p {
+font-size: 18px;
+max-width: 600px;
+margin: 0 auto;
+}
+
+
+#book-now-button1 {
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    #book-now-button1:hover {
+        background-color: #f8f8f8;
+        color: #000;
+        }
+
+        #submit {
+            margin-top: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 9px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;  
+        }
+        #submit:hover {
+            background-color: #f8f8f8;
+            color: #000;
+            }
+
+/* available-amenities*/
+
+
+.available-amenities {
+background-color: #f8f8f8;
+padding: 20px;
+margin: 40px 0;
+}
+
+.available-amenities h3 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.amenities-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+margin: 40px 0;
+}
+
+.amenity-box {
+width: calc(25% - 20px);
+padding: 20px 0;
+margin: 15px;
+border: 1px solid #ddd;
+border-radius: 5px;
+text-align: center;
+}
+
+.amenity-box i {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.amenity-box p {
+font-size: 14px;
+line-height: 1.5;
+}
+
+
+/* FOOD */
+
+.food {
+text-align: center;
+padding: 40px 0;
+}
+
+.food h3 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.food p {
+font-size: 18px;
+line-height: 1.5;
+max-width: 600px;
+margin: 0 auto;
+}
+
+/*Footer*/
+
+/* Media Query for Mobile Responsiveness */
+
+@media screen and (max-width: 768px) {
+header {
+flex-direction: column;
+align-items: center;
+}
+
+nav {
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.amenities-container {
+flex-direction: column;
+}
+
+.amenity-box {
+width: 100%;
+}
+}
+/*gopougfsdkduf*/
+
+
+        /*booking */
+          
+        .container {
+          animation: fade-in 1s ease-in-out;
+        }
+        
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+        
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* about us*/
+        
+        .about-section {
+            padding: 30px 10px;
+        }
+        .about-description {
+            margin-bottom: 30px;
+        }
+        .carousel {
+            margin-bottom: 40px;
+        }
+        .brand-heading a{
+            text-decoration: none;
+            color: #000;
+            font-size: 3em;
+            
+        }
+        .brand-heading {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #f8f8f8;
+        }
+
+
+/*footer*/
+/* Font Awesome icons (replace with your own if needed) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.copyright {
+  margin-top: 10px;
+  padding: auto;
+  color: #000;
+  background-color: #ddd;
+  font-size: 12px;
+}
+/*contact us page*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-section, .message-section {
+  flex-basis: calc(50% - 40px);
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-item i {
+  margin-top: 20px;
+  margin-right: 8px;
+  color: #030703;
+}
+.info-item a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #030703;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #060606;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #edf0ed;
+  color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-section, .message-section {
+      flex-basis: 100%;
+  }
+}
